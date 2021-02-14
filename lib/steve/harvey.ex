@@ -14,10 +14,12 @@ defmodule Steve.Harvey do
   def handle_event({:MESSAGE_CREATE, msg, _ws_state}) do
     # verify we are in a guild
     if msg.guild_id do 
+      member = Map.merge(msg.member, %{user: msg.author});
+
       # and we are reading a commandj
       if String.starts_with?(msg.content, @prefix) do
         # and the user has permissions
-        if Steve.Util.is_administrator(Map.merge(msg.member, %{user: msg.author}), msg.guild_id) do
+        if Steve.Util.is_administrator(member, msg.guild_id) do
           handle_command(msg, String.slice(msg.content, String.length(@prefix)..-1));
         end
       end
