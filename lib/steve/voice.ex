@@ -5,6 +5,7 @@ defmodule Steve.Voice do
     if Voice.ready?(guild_id) and not Voice.playing?(guild_id) do
       :ok = Voice.play(guild_id, "sex.mp3", :url)
     else
+      Process.sleep(100)
       play_audio(guild_id)
     end
   end

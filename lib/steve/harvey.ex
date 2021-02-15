@@ -26,7 +26,7 @@ defmodule Steve.Harvey do
   end
 
   def handle_event({:VOICE_SPEAKING_UPDATE, voice, _ws_state}) do
-    if !voice.speaking do
+    unless voice.speaking do
       # play steve harvey
       Steve.Voice.play_audio(voice.guild_id)
     end
