@@ -4,6 +4,8 @@ A Discord bot that plays the famous song
 Steve Harvey, on loop, forever and ever (until you tell it to stop with
 `steve!leave`).
 
+[Invite the bot to your own server.](https://discord.com/api/oauth2/authorize?client_id=810315818914021406&permissions=0&scope=bot)
+
 ## Usage
 If you're administrator, you can use `steve!join` and `steve!leave`. Both
 commands do exactly what you think they do.
