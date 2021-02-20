@@ -10,6 +10,7 @@ Steve Harvey, on loop, forever and ever (until you tell it to stop with
 If you're administrator, you can use `steve!join` and `steve!leave`. Both
 commands do exactly what you think they do.
 
+# For Developers
 ## Run It Yourself
 This requires [Elixir](https://elixir-lang.org/install.html) to run. Clone this 
 repository with `git clone https://github.com/frostu8/steve.git`, cd into the 
