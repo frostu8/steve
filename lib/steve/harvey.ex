@@ -50,6 +50,8 @@ defmodule Steve.Harvey do
       "leave" ->
         # attempt to leave
         Voice.leave_channel(msg.guild_id)
+      _ ->
+        :ignore
     end
   end
 end
