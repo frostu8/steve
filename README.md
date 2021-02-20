@@ -18,6 +18,7 @@ as below:
 
 ```elixir
 # config/token.exs
+import Config
 
 config :nostrum,
   token: "<bot token>"
